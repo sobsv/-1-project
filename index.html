@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/styles.css">
+  <title>YourMeal</title>
   <link rel="apple-touch-icon" sizes="180x180" href="icon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
@@ -11,10 +11,14 @@
   <link rel="mask-icon" href="icon/safari-pinned-tab.svg" color="#5bbad5">
   <meta name="msapplication-TileColor" content="#ffc40d">
   <meta name="theme-color" content="#ffffff">
-  <title>Burger</title>
+  <!-- preload сразу начнёт открытия страницу с выбранного шрифта -->
+  <link rel="preload" href="fonts/nunito-v26-cyrillic_latin-regular.woff2" as="font" crossorigi="anonymous">
+  <link rel="preload" href="fonts/nunito-v26-cyrillic_latin-600.woff2" as="font" crossorigi="anonymous">
+  <link rel="preload" href="fonts/nunito-v26-cyrillic_latin-800.woff2" as="font" crossorigi="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <!-- спрайт. стиль с объявлением, чтобы не было сдвигов на странице -->
+  <!-- спрайт. display="none", чтобы не было сдвигов на странице -->
   <svg display="none">
     <!-- изменил значение в атрибутах fill="white" на fill="transparent", чтобы была прозрачность, так лучше смотрится -->
     <!-- удалил все атрибуты fill с основным цветом, чтобы задавать свои значения, ибо в приоритет браузер считывает сдешние значения, а не в css -->
