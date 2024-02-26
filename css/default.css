@@ -1,3 +1,36 @@
+html {
+  --container:300px;
+  --padding-contrainer: 10px;
+  box-sizing: border-box;
+  /* position: relative;
+  overflow-x: hidden; */
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 body {
   font-family: nunito, sans-serif;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: #f9f9f9;
+}
+
+img, svg {
+  max-width: 100%;
+  min-height: 100%;
+  height: auto;
+}
+
+button {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.container {
+  max-width: calc(var(--container) + var(--padding-contrainer) * 2);
+  padding: 0 var(--padding-contrainer);
+  margin: 0 auto;
 }
